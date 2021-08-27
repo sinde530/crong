@@ -16,7 +16,6 @@ head,body{
 }
 
 .list-box{
-  /* width: 50vh; */
   margin: 16px 16px;
   padding: 16px 16px;
   border: 1px solid #000;
@@ -26,6 +25,11 @@ head,body{
   align-items: center;
   display: flex;
   padding-right: 2rem;
+}
+
+.title-hd{
+  padding: 0;
+
 }
 
 .title-data{
@@ -40,6 +44,16 @@ head,body{
   text-transform: uppercase;
   padding: 4px 8px;
   background-color: rgba(32,35,42,.1);
+}
+
+.title-content{
+  width: 90%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  font-weight: 500;
 }
 
 .good-btn{

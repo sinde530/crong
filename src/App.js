@@ -23,30 +23,60 @@ function App() {
       <Header />
 
       <div className="listall">
+
         <div className="list-box">
           <div className="title">
             <p className="title-data">{currentDate}</p>
             <p className="title-text">{DevelopBlog}</p>
           </div>
+          <h1 className="title-hd">Project1</h1>
           <h2 className="title-content">{Title[0]}</h2>
           <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
         </div>
 
         <div className="list-box">
-          <p>{currentDate}</p>
-          <h2>{Title[1]}</h2>
+          <div className="title">
+            <p className="title-data">{currentDate}</p>
+            <p className="title-text">{DevelopBlog}</p>
+          </div>
+          <h1 className="title-hd">Project2</h1>
+          <h2 className="title-content">{Title[0]}</h2>
           <span onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
         </div>
 
         <div className="list-box">
-          <p>{currentDate}</p>
-          <h2>{Title[2]}</h2>
+          <div className="title">
+            <p className="title-data">{currentDate}</p>
+            <p className="title-text">{DevelopBlog}</p>
+          </div>
+          <h1 className="title-hd">Project3</h1>
+          <h2 className="title-content">{Title[0]}</h2>
           <span onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
         </div>
 
-        <Footer/>
+        <div className="list-box">
+          <div className="title">
+            <p className="title-data">{currentDate}</p>
+            <p className="title-text">{DevelopBlog}</p>
+          </div>
+          <h1 className="title-hd">Project4</h1>
+          <h2 className="title-content">{Title[0]}</h2>
+          <span onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
+        </div>
+
+        <div className="list-box">
+          <div className="title">
+            <p className="title-data">{currentDate}</p>
+            <p className="title-text">{DevelopBlog}</p>
+          </div>
+          <h1 className="title-hd">Project5</h1>
+          <h2 className="title-content">{Title[0]}</h2>
+          <span onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
+        </div>
+
 
       </div>
+      <Footer />
     </div>
   );
 }
