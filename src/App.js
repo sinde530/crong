@@ -41,7 +41,7 @@ function App() {
           </div>
           <h1 className="title-hd">Project2</h1>
           <h2 className="title-content">{Title[0]}</h2>
-          <span onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
+          <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
         </div>
 
         <div className="list-box">
@@ -51,7 +51,7 @@ function App() {
           </div>
           <h1 className="title-hd">Project3</h1>
           <h2 className="title-content">{Title[0]}</h2>
-          <span onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
+          <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
         </div>
 
         <div className="list-box">
@@ -61,7 +61,7 @@ function App() {
           </div>
           <h1 className="title-hd">Project4</h1>
           <h2 className="title-content">{Title[0]}</h2>
-          <span onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
+          <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
         </div>
 
         <div className="list-box">
@@ -71,7 +71,7 @@ function App() {
           </div>
           <h1 className="title-hd">Project5</h1>
           <h2 className="title-content">{Title[0]}</h2>
-          <span onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
+          <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
         </div>
 
 
