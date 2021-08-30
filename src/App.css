@@ -4,6 +4,13 @@ head,body{
   padding: 0 auto;
 } 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
 .listall{
   width: 100%;
   max-width: 1200px;
@@ -12,7 +19,7 @@ head,body{
   display: block;
   margin: 0 auto;
   align-items: center;
-
+  z-index: -1;
 }
 
 .list-box{
@@ -31,6 +38,7 @@ head,body{
   padding: 0;
   font-size: 24px;
   margin: 0 auto;
+  padding-bottom: 0.5rem;
 }
 
 .title-data{
@@ -63,9 +71,20 @@ head,body{
   overflow: hidden;
 }
 
-@media screen and (max-width:"480px") {
+.home, .reports, .products {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+@media screen and (max-width:480px) {
   .title-content{
-    font-size: 4rem;
+    font-size: 1rem;
+  }
+  .title-text{
+    font-size: 0.5rem;
   }
 }
 

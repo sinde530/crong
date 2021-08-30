@@ -5,6 +5,7 @@
     position: relative;
     bottom: 0;
     color: white;
+    z-index: -1;
 }
 
 .footer h3{
@@ -26,7 +27,7 @@
 }
 
 .icons i {
-    margin: 0px 30px;
+    margin: 0px 25px;
     /* width: 5rem; */
     height: 5rem;
     text-align: center;
