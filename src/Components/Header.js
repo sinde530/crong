@@ -18,7 +18,7 @@ function Header() {
                     <Link to="#" className="menu-bars">
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
-                <h1 className="header-nm">Blog Class Naming</h1>
+                    <Link to="/home" className="header-nm"><h1 >Blog Class Naming</h1></Link>
                 </div>
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                     <ul className='nav-menu-items' onClick={showSidebar}>

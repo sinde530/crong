@@ -16,11 +16,10 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-      <Route path ='/' exact component={Home}/>
+      <Route path ='/Home' exact component={Home}/>
       <Route path ='/reports' component={Reports}/>
       <Route path ='/products' component={Products}/>
       </Switch>
-      {/* <Main /> */}
       <Footer />
     </div>
     </BrowserRouter>
