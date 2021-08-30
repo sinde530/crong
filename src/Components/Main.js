@@ -69,6 +69,16 @@ function Main() {
                 <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
             </div>
 
+            <div className="list-box">
+                <div className="title">
+                    <p className="title-data">{currentDate}</p>
+                    <p className="title-text">{DevelopBlog}</p>
+                </div>
+                <h1 className="title-hd">Project6</h1>
+                <h2 className="title-content">{Title[0]}</h2>
+                <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
+            </div>
+
 
         </div>
     );
