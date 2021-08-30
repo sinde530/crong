@@ -25,12 +25,17 @@
     margin: 0 auto;
   }
 
+  .openMenu{
+    position: absolute;
+  }
+
   .header-list{
     position: relative;
     float: right;
     line-height: 2rem;
     display: flex;
     align-items: center;
+    padding-right: 3rem;
   }
 
   .header-item{
@@ -38,16 +43,18 @@
     cursor: pointer;
     padding: 16px 10px;
     font-size: 18px;
+    display: block;
   }
 
   .toggle-btn{
-    /* display: none; */
+    display: none;
     height: 2rem;
     border: 0;
     outline: none;
     background-color: transparent;
     cursor: pointer;
     line-height: 0.3;
+    float: right;
   }
 
   .toggle-btn::before{
@@ -87,6 +94,17 @@
 
   .navicon::after{
     bottom: -.5rem;
+  }
+
+  @media screen and (max-width:600px) {
+    .header-item{
+      display: none;
+    }
+    .toggle-btn{
+      padding-top: 1.8rem;
+      display: block;
+      /* display: block; */
+    }
   }
  
 
