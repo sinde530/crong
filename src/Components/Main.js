@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../App.css';
+import '../Styles/main.css';
 
 function Main() {
     var currentDate = ("08/26/2021");
