@@ -18,7 +18,7 @@ export const SidebarData =  [
         cName: 'nav-text'
     },
     {
-        title: 'notion',
+        title: 'Notion',
         path: '/notion',
         icon: <SiIcons.SiNotion />,
         cName: 'nav-text'
