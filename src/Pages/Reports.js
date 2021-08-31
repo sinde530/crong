@@ -4,7 +4,7 @@ import Main from '../Components/Main';
 class Reports extends Component {
     render() {
         return (
-            <Main/>
+            <h1>Reports</h1>
         );
     }
 }

@@ -2,11 +2,12 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+import * as SiIcons from 'react-icons/si';
 
 export const SidebarData =  [
     {
         title: 'Home',
-        path: '/home',
+        path: '/',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
@@ -17,9 +18,9 @@ export const SidebarData =  [
         cName: 'nav-text'
     },
     {
-        title: 'Products',
-        path: '/products',
-        icon: <FaIcons.FaCartPlus />,
+        title: 'notion',
+        path: '/notion',
+        icon: <SiIcons.SiNotion />,
         cName: 'nav-text'
     },
     {

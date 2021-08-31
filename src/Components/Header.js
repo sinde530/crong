@@ -15,7 +15,7 @@ function Header() {
         <div className="header-box">
             <IconContext.Provider value={{ color: 'wheat' }}>
                 <div className="navbar">
-                    <Link to="/crong-blog" className="menu-bars">
+                    <Link to="#" className="menu-bars">
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
                     <Link to="/" className="header-nm"><h1 >Blog Class Naming</h1></Link>

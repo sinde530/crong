@@ -4,8 +4,10 @@ import './App.css';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Home from './Pages/Home';
+import Notion from './Pages/Notion';
 import Reports from './Pages/Reports';
-import Products from './Pages/Products';
+
+
 
 function App() {
 
@@ -15,9 +17,9 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-      <Route path ='/Home' exact component={Home}/>
+      <Route path ='/' exact component={Home}/>
       <Route path ='/reports' component={Reports}/>
-      <Route path ='/products' component={Products}/>
+      <Route path ='/notion' component={Notion}/>
       </Switch>
       <Footer />
     </div>
