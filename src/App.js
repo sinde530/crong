@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
-import Main from './Components/Main';
 import Home from './Pages/Home';
 import Reports from './Pages/Reports';
 import Products from './Pages/Products';
@@ -20,7 +19,6 @@ function App() {
       <Route path ='/reports' component={Reports}/>
       <Route path ='/products' component={Products}/>
       </Switch>
-      {/* <Main/> */}
       <Footer />
     </div>
     </BrowserRouter>
