@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
 
-    <div>
+    <div className="App">
       <Header />
       <Switch>
       <Route path ='/crong-blog' exact component={Home}/>
