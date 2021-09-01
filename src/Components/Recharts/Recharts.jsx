@@ -22,12 +22,12 @@ function Recharts() {
             <div className="chart-container">
                 <h3 className="chart-title">Line Chart</h3>
                 <div className="chart-content">
-                    <ResponsiveContainer width ="100%" height={300}>
+                    <ResponsiveContainer width ="100%" height={400}>
                         <LineChart data={data}>
                             <Tooltip />
                             <XAxis dataKey="label"/>
                             <YAxis/>
-                            <CartesianGrid stroke="#ccc" strokeDasharray="1 1"/>
+                            <CartesianGrid stroke="#ccc" strokeDasharray="7 7"/>
                             <Legend/>
                             <Line type="monotone" dataKey="sales" stroke="#Fb88cc" />
                             <Line type="monotone" dataKey="leads" stroke="#17A8f5" />
