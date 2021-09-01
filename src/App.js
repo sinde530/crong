@@ -12,23 +12,22 @@ import Team from './Pages/Team';
 
 
 
-
 function App() {
 
   return (
     <BrowserRouter>
 
-    <div className="App">
+    <div>
       <Header />
       <Switch>
-      <Route path ='/' exact component={Home}/>
+      <Route path ='/crong-blog' exact component={Home}/>
       <Route path ='/reports' component={Reports}/>
       <Route path ='/notion' component={Notion}/>
       <Route path ='/team' component={Team}/>
       <Route path ='/messages' component={Messages}/>
       <Route path ='/suport' component={Suport}/>
       </Switch>
-      <Footer />
+      <Footer/>
     </div>
     </BrowserRouter>
   );

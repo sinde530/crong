@@ -7,7 +7,7 @@ import * as SiIcons from 'react-icons/si';
 export const SidebarData =  [
     {
         title: 'Home',
-        path: '/',
+        path: '/crong-blog',
         icon: <AiIcons.AiFillHome />,
         cName: 'nav-text'
     },
