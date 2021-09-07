@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
+import Tick from './Components/Tick';
 import Home from './Pages/Home';
 import Messages from './Pages/Messages';
 import Notion from './Pages/Notion';
@@ -19,6 +20,7 @@ function App() {
 
     <div className="App">
       <Header />
+      <Tick/>
       <Switch>
       <Route path ='/crong-blog' exact component={Home}/>
       <Route path ='/reports' component={Reports}/>
