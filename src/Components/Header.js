@@ -20,6 +20,7 @@ function Header() {
                     </Link>
                     <Link to="/crong-blog" className="header-nm"><h1 >Blog Class Naming</h1></Link>
                 </div>
+                
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                     <ul className='nav-menu-items' onClick={showSidebar}>
                         <li className="navbar-toggle">
@@ -43,7 +44,7 @@ function Header() {
         </div>
 
 
-);
+    );
 }
 
 

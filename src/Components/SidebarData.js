@@ -32,13 +32,25 @@ export const SidebarData =  [
     {
         title: 'Messages',
         path: '/messages',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        icon: <AiIcons.AiFillMessage />,
         cName: 'nav-text'
     },
     {
         title: 'Suport',
         path: '/suport',
         icon: <IoIcons.IoMdHelpCircle />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Login',
+        path: '/login',
+        icon: <AiIcons.AiOutlineLogin />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Register',
+        path: '/register',
+        icon: <FaIcons.FaRegistered />,
         cName: 'nav-text'
     },
 ]
