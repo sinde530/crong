@@ -20,7 +20,7 @@ function Login() {
             <div className="login-main">
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className=" pb-1" controlId="Emial">
-                        <Form.Label>Login</Form.Label>
+                        <Form.Label>Login Form</Form.Label>
                     </Form.Group>
                     <Form.Control className="mb-2" autoFocus type="Email" value={Email} onChange={(e) => setEmail(e.target.value)}></Form.Control>
                     <Form.Group size=" mb-3" controlId="Password">
