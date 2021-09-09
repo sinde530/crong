@@ -22,13 +22,14 @@
     padding-right: 2rem;
   }
   
-  .title-hd{
-    padding: 0;
+  .title-hd {
     font-size: 24px;
     margin: 0 auto;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-  }
+    padding: 12px 0px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    line-height: 0;
+}
   
   .title-data{
     padding-right: 1rem;

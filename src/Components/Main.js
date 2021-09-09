@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../Styles/main.css';
-import ReactPlayer from 'react-player';
 
 function Main() {
     var currentDate = ("08/26/2021");
@@ -12,19 +11,17 @@ function Main() {
         'Component2',
         // 3
         'Component3']);
-    let [Good, GoodChange] = useState(0);
+    // let [Good, GoodChange] = useState(0);
 
 
     return (
         <div className="listall">
-            {/* <ReactPlayer url ='https://www.youtube.com/watch?v=QjiQJ5BtwoM&list=RDQjiQJ5BtwoM&start_radio=1'  /> */}
-
 
             <div className="list-box">
                 <div className="title">
                     <p className="title-data">{currentDate}</p>
                     <p className="title-text">{DevelopBlog}</p>
-                    <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
+                    {/* <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good} */}
                 </div>
                 <h1 className="title-hd">Project1</h1>
                 <h2 className="title-content">{Title[0]}</h2>
@@ -34,7 +31,6 @@ function Main() {
                 <div className="title">
                     <p className="title-data">{currentDate}</p>
                     <p className="title-text">{DevelopBlog}</p>
-                    <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
                 </div>
                 <h1 className="title-hd">Project2</h1>
                 <h2 className="title-content">{Title[0]}</h2>
@@ -44,7 +40,6 @@ function Main() {
                 <div className="title">
                     <p className="title-data">{currentDate}</p>
                     <p className="title-text">{DevelopBlog}</p>
-                    <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
                 </div>
                 <h1 className="title-hd">Project3</h1>
                 <h2 className="title-content">{Title[0]}</h2>
@@ -54,7 +49,6 @@ function Main() {
                 <div className="title">
                     <p className="title-data">{currentDate}</p>
                     <p className="title-text">{DevelopBlog}</p>
-                    <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
                 </div>
                 <h1 className="title-hd">Project4</h1>
                 <h2 className="title-content">{Title[0]}</h2>
@@ -64,7 +58,6 @@ function Main() {
                 <div className="title">
                     <p className="title-data">{currentDate}</p>
                     <p className="title-text">{DevelopBlog}</p>
-                    <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
                 </div>
                 <h1 className="title-hd">Project5</h1>
                 <h2 className="title-content">{Title[0]}</h2>
@@ -74,7 +67,6 @@ function Main() {
                 <div className="title">
                     <p className="title-data">{currentDate}</p>
                     <p className="title-text">{DevelopBlog}</p>
-                    <span className="good-btn" onClick={() => { GoodChange(Good + 1) }}> 💜 </span> {Good}
                 </div>
                 <h1 className="title-hd">Project6</h1>
                 <h2 className="title-content">{Title[0]}</h2>

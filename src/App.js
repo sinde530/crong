@@ -21,7 +21,6 @@ function App() {
 
     <div className="App">
       <Header />
-      {/* <Tick/> */}
       <Switch>
       <Route path ='/crong-blog' exact component={Home}/>
       <Route path ='/reports' component={Reports}/>

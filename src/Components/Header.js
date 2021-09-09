@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IconContext } from 'react-icons'
 import '../Styles/header.css'
-
+import '../App.css'
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from 'react-router-dom';
@@ -14,11 +14,11 @@ function Header() {
     return (
         <div className="header-box">
             <IconContext.Provider value={{ color: 'wheat' }}>
-                <div className="navbar">
+                <div className="navbar-box">
                     <Link to="#" className="menu-bars">
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
-                    <Link to="/crong-blog" className="header-nm"><h1 >Blog Class Naming</h1></Link>
+                    <Link to="/crong-blog" className="header-nm"><h1 className="header-h1">Blog Class Naming</h1></Link>
                 </div>
                 
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
