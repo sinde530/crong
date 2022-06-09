@@ -1,7 +1,7 @@
 import React, { useState} from 'react'
 import { Button, Form } from 'react-bootstrap';
 import '../Styles/login.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';          
 
 function Login() {
     const [Email, setEmail] = useState("");

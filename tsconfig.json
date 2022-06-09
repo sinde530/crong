@@ -1,0 +1,83 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "useDefineForClassFields": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "allowJs": false,
+        "skipLibCheck": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "rootDir": ".",
+        "baseUrl": ".",
+        "types": [
+            "jest",
+        ],
+        "incremental": true
+    },
+    "include": [
+        "src",
+        "jest.setup.js",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.js",
+        "**/*.jsx"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "**/__tests__/**/*.[jt]s?(x)"
+            ],
+            "env": {
+                "jest/globals": true
+            },
+            "globals": {
+                "context": "readonly"
+            },
+            "plugins": [
+                "jest"
+            ],
+            "extends": [
+                "plugin:jest/recommended"
+            ],
+            "rules": {
+                "jest/expect-expect": "off"
+            }
+        },
+        // Only uses Testing Library lint rules in test files
+        {
+            "files": [
+                "**/cypress/**/*.[jt]s?(x)"
+            ],
+            "env": {
+                "cypress/globals": true
+            },
+            "plugins": [
+                "cypress"
+            ],
+            "extends": [
+                "plugin:cypress/recommended"
+            ]
+        }
+    ],
+    "exclude": [
+        "node_modules",
+        ".yarn"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
+}
