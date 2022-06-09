@@ -1,8 +1,0 @@
-{
-	"tabWidth": 2,
-    "doubleQuote": true,
-    "parser": "typescript",
-    "semi": true,
-    "useTabs": true,
-    "printWidth": 120
-}
