@@ -1,10 +1,14 @@
+/* eslint-disable no-console */
 import { useCallback, useState } from "react";
 
+import useInput from "../../hooks/useInput";
+
 export default function SignUp() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [passwordCheck, setPasswordCheck] = useState("");
+  const [name, onClickName] = useInput("");
+  const [email, onClickEmail] = useInput("");
+  // , , 공백으로 set에러를 훅에 담을수 없으니 공백으로 처리할수있다.
+  const [password, , setPassword] = useInput("");
+  const [passwordCheck, , setPasswordCheck] = useInput("");
 
   const [mismatchError, setMismatchError] = useState(false);
   const [signUpSuccess, setSignUpSuccess] = useState(false);
@@ -12,14 +16,6 @@ export default function SignUp() {
 
   console.log(setSignUpSuccess);
   console.log(setSignUpError);
-
-  const onClickName = useCallback((event: any) => {
-    setName(event.target.value);
-  }, []);
-
-  const onClickEmail = useCallback((event: any) => {
-    setEmail(event.target.valie);
-  }, []);
 
   const onClickPassword = useCallback(
     (event: any) => {
@@ -40,9 +36,9 @@ export default function SignUp() {
   const onSubmit = useCallback(
     (event: any) => {
       event.preventDefault();
-      console.log(name, email, password, passwordCheck);
+      //   console.log(name, email, password, passwordCheck);
       if (!mismatchError) {
-        console.log("Error");
+        // console.log("Error");
       }
     },
     [name, email, password, passwordCheck]
