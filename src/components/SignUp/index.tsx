@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 export default function SignUp() {
   const [name, setName] = useState("");
@@ -6,26 +6,47 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
   const [passwordCheck, setPasswordCheck] = useState("");
 
-  const onClickName = (event: any) => {
-    setName(event.currentTarget.value);
-    console.log(event.currentTarget.value);
-  };
-  const onClickEmail = (event: any) => {
-    setEmail(event.currentTarget.value);
-  };
-  const onClickPassword = (event: any) => {
-    setPassword(event.currentTarget.value);
-  };
-  const onClickPasswordCheck = (event: any) => {
-    setPasswordCheck(event.currentTarget.value);
-  };
+  const [mismatchError, setMismatchError] = useState(false);
+  const [signUpSuccess, setSignUpSuccess] = useState(false);
+  const [signUpError, setSignUpError] = useState("");
 
-  const onSubmit = (event: any) => {
-    event.preventDefault();
-    if (password !== passwordCheck) {
-      alert("비밀번호와 비밀번호확인은 같아야 합니다.");
-    }
-  };
+  console.log(setSignUpSuccess);
+  console.log(setSignUpError);
+
+  const onClickName = useCallback((event: any) => {
+    setName(event.target.value);
+  }, []);
+
+  const onClickEmail = useCallback((event: any) => {
+    setEmail(event.target.valie);
+  }, []);
+
+  const onClickPassword = useCallback(
+    (event: any) => {
+      setPassword(event.target.value);
+      setMismatchError(event.target.value !== passwordCheck);
+    },
+    [passwordCheck]
+  );
+
+  const onClickPasswordCheck = useCallback(
+    (event: any) => {
+      setPasswordCheck(event.target.value);
+      setMismatchError(event.target.value !== password);
+    },
+    [password]
+  );
+
+  const onSubmit = useCallback(
+    (event: any) => {
+      event.preventDefault();
+      console.log(name, email, password, passwordCheck);
+      if (!mismatchError) {
+        console.log("Error");
+      }
+    },
+    [name, email, password, passwordCheck]
+  );
 
   return (
     <>
@@ -67,6 +88,10 @@ export default function SignUp() {
             onChange={onClickPasswordCheck}
           />
         </div>
+        {mismatchError && <p>비밀번호가 일치하지 않습니다.</p>}
+        {!name && <p>이름을 입력해주세요.</p>}
+        {signUpError && <p>{signUpError}</p>}
+        {signUpSuccess && <p>회원가입되었습니다! 로그인해주세요.</p>}
         <div>
           <button type="submit">submit</button>
         </div>
