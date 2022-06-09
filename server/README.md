@@ -1,4 +1,4 @@
 # BacK
 
 ## Install
-> yarn add express
+> yarn add -D express typescript ts-node nodemon @types/node @types/express
