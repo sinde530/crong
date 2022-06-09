@@ -1,6 +1,5 @@
-import React, { Component, useState } from 'react';
-import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Tick from './Components/Tick';
@@ -11,28 +10,29 @@ import Notion from './Pages/Notion';
 import Reports from './Pages/Reports';
 import Suport from './Pages/Suport';
 import Team from './Pages/Team';
-import Register from './LoginForm/Register'
+import Register from './LoginForm/Register'   
 
+import './App.css';
 
 function App() {
 
   return (
     <BrowserRouter>
-
-    <div className="App">
-      <Header />
-      <Switch>
-      <Route path ='/crong-blog' exact component={Home}/>
-      <Route path ='/reports' component={Reports}/>
-      <Route path ='/notion' component={Notion}/>
-      <Route path ='/team' component={Team}/>
-      <Route path ='/messages' component={Messages}/>
-      <Route path ='/suport' component={Suport}/>
-      <Route path ='/login' component={Login}/>
-      <Route path ='/register' component={Register}/>
-      </Switch>
-      <Footer/>
-    </div>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/crong-blog" element={<Home />} />
+          <Route path="/crong-blog" element={<Home/>} />
+          <Route path="/reports" element={<Reports/>} />
+          <Route path="/notion" element={<Notion/>} />
+          <Route path="/team" element={<Team/>} />
+          <Route path="/messages" element={<Messages/>} />
+          <Route path="/suport" element={<Suport/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Register/>} />
+        </Routes>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

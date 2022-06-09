@@ -1,6 +1,4 @@
-import React from 'react';
-
-function Tick() {
+export default function Tick() {
     return(
         <div>
             <h2>{new Date(). toLocaleTimeString()}</h2>
@@ -9,5 +7,3 @@ function Tick() {
 }
 
 setInterval(Tick, 1000);
-
-export default Tick;
