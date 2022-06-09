@@ -6,7 +6,6 @@ function Tick() {
             <h2>{new Date(). toLocaleTimeString()}</h2>
         </div>
     );
-    // ReactDOM.render(element, document.getElementById('root'));
 }
 
 setInterval(Tick, 1000);
