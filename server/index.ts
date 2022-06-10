@@ -1,8 +1,15 @@
-import { useCallback } from "react"
+import express, { Request, Response, NextFunction } from "express";
 
-const express = require('express')
-const app = express()
-const port = 5000
+const app = express();
 
-app.get('/', (req, res) => res.send('Hello World!'))
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.get("/welcome", (req: Request, res: Response, next: NextFunction) => {
+  res.send("welcome!");
+});
+
+app.listen("1234", () => {
+  console.log(`
+  ################################################
+  🛡️  Server listening on port: 1234🛡️
+  ################################################
+`);
+});
